@@ -298,3 +298,10 @@ tr:first-child {background-color: rgb(152, 184, 252);}
     margin-left: 100%;
   }
 }
+
+.move_right {
+  margin-left: 50%;
+}
+.move_right_right {
+  margin-left: 80%;
+}
