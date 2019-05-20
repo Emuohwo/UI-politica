@@ -258,8 +258,17 @@ label {
   font-size: 18px;
   width: 100%;
   height: 30px;
-  border-color: 3px solid grey;
-  background-color: rgb(233, 231, 231);
+  border: 1px solid grey;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.form-control:focus {
+  border: 2px solid grey;
+
 }
 
 /* ======== Tables Formatting ============ */
