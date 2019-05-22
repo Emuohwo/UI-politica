@@ -272,6 +272,7 @@ label {
 }
 
 /* ======== Tables Formatting ============ */
+.table_section {min-height: 450px;}
 .table_container {
   overflow-x: auto;
   margin: 2% auto;
@@ -312,5 +313,5 @@ tr:first-child {background-color: rgb(152, 184, 252);}
   margin-left: 50%;
 }
 .move_right_right {
-  margin-left: 80%;
+  margin-left: 60%;
 }
