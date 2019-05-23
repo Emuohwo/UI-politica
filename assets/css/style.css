@@ -3,9 +3,14 @@ h1.big_heading {
   font-family: cursive;
   font-size: 400%;
   font-style: italic;
+  padding-top: 14%;
 }
 
 h1 {text-align: center;}
+
+.center_align {
+  text-align: center;
+}
 
 html, body {
   font-family: Arial, Helvetica, sans-serif;
@@ -147,15 +152,20 @@ html, body {
 
 /* ================== HOME HERO  =================== */
 #home_banner {
-  /* background: url(assets/images/ballot.png); */
-  background: url(assets/images/votecounts.jpg);
+  /* background: linear-gradient(#ffb7b76e, rgba(20, 20, 20, 0.849)), url(assets/images/electronicvoting.jpg) center  no-repeat fixed; */
+  background: url(../images/electronicvoting.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  height: 90vh;
+}
+.home-content{
+  margin-top: -5%;
+
 }
 
-/* ====== Features of the poll */
+/* ====== Features of the poll ======= */
 .features img {
   height: 70px;
   width: 200px;
@@ -167,6 +177,8 @@ ul.features {
 }
 
 ul.features li {
+        background-color: aliceblue;
+        border: 2px solid rgb(152, 184, 252);
   display: inline-block;
   width: 30%;
   margin: 1%;
@@ -230,6 +242,17 @@ label {
 .delete:hover {
   background-color: red;
 }
+
+.btn-outline {
+  border: 1px solid rgb(107, 150, 245);
+  background-color: #fff;
+  color: rgb(107, 150, 245);
+}
+.btn-outline:hover {
+  border: 1px solid transparent;
+  background-color: rgb(107, 150, 245);
+  color: #fff;
+}
 .submit {
   /*display: block;
   */font-size: 20px;
@@ -272,6 +295,9 @@ label {
 }
 
 /* ======== Tables Formatting ============ */
+p.action {
+  margin-left: 10%;
+}
 .table_section {min-height: 450px;}
 .table_container {
   overflow-x: auto;

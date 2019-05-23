@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>View Offices - Admin</title>
+    <title>All Parties - Politica</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -17,25 +17,9 @@
                     <img class="page_logo" src="assets/images/ElectionLogo.jpg" alt="">
                 </a>
                 <a href="#.html" class="move_right">Home</a>
-                <a href="#.html">Results</a>
-                <div class="dropdown active">
-                    <button class="dropbtn">Parties 
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                    <a class="active" href="adminviewparties.html">View Parties</a>
-                    <a href="admincreateparties.html">Create Parties</a>
-                    </div>
-                </div> 
-                <div class="dropdown">
-                    <button class="dropbtn active">Offices 
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                    <a href="adminviewoffices.html">View Offices</a>
-                    <a href="admincreateoffice.html">Create Offices</a>
-                    </div>
-                </div> 
+                <a href="adminresultsheet.html">Result</a>
+                <a href="adminviewparties.html" class="active">Parties</a>
+                <a href="adminviewoffices.html">Offices</a>
                 <a href="#about">Logout</a>
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
@@ -48,6 +32,7 @@
 
 
     <section class="table_section">
+            <p class="action"><a href="admincreateparties.html" class="btn edit">Add Party</a></p>
         <div class="table_container">
             <table>
 
