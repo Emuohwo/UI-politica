@@ -1,4 +1,5 @@
 /* ====== HEADINSG ========= 9*/
+.whiteColor {color: #000;}
 h1.big_heading {
   font-family: cursive;
   font-size: 400%;
@@ -139,21 +140,21 @@ html, body {
 
 /* ------- LOGOS ------------- */
 .page_logo {
-    margin: -5px auto -12px;
-    /* padding-bottom: -15px; */
-    width: 45px;
-    height: auto;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  margin: -5px auto -12px;
+  /* padding-bottom: -15px; */
+  width: 45px;
+  height: auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /* ================== HOME HERO  =================== */
 #home_banner {
-  /* background: linear-gradient(#ffb7b76e, rgba(20, 20, 20, 0.849)), url(assets/images/electronicvoting.jpg) center  no-repeat fixed; */
-  background: url(../images/electronicvoting.jpg);
+  /* background: linear-gradient(#ffb7b76e, rgba(20, 20, 20, 0.849)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hmer_J8rifxrtyjflvqRvEVRdjR5lg8gnCSmZEYKKZ_BcrSomw) center  no-repeat fixed; */
+  background: url(../images/landing.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,8 +168,8 @@ html, body {
 
 /* ====== Features of the poll ======= */
 .features img {
-  height: 70px;
-  width: 200px;
+  width: 100%;
+  height: 100px;
   margin-bottom: -3%;
 }
 ul.features {
@@ -177,11 +178,11 @@ ul.features {
 }
 
 ul.features li {
-        background-color: aliceblue;
-        border: 2px solid rgb(152, 184, 252);
+  background-color: aliceblue;
+  border: 2px solid rgb(152, 184, 252);
   display: inline-block;
   width: 30%;
-  margin: 1%;
+  margin: 1.1%;
   text-align: center;
 }
 
@@ -192,6 +193,11 @@ footer {
   text-align: center;
 }
 
+.fixed_footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
 
 /* ========== FORMS ============ */
 .auto_positioned {
@@ -328,16 +334,97 @@ tr:first-child {background-color: rgb(152, 184, 252);}
   -o-border-radius: 50%;
 }
 
-/* ==== adjust some buttons to the right ==== */
-@media screen and (max-width:700px) {
-  .topnav a.move_right {
-    margin-left: 100%;
-  }
-}
+
 
 .move_right {
   margin-left: 50%;
 }
 .move_right_right {
   margin-left: 60%;
+}
+
+/* ===============================================
+MEDIA QUERIES STARTS HERE
+============================================================ */
+@media screen and (max-width: 1084px) {
+  .move_right{margin-left: 9.5%;}
+
+  .table_section h4 {margin-top: 6%;}
+}
+
+@media screen and (max-width: 874px) {
+  html,
+  body {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+  h1.big_heading {font-size: 200%;}
+  .move_right{margin-left: 10%;}
+  .move_right_right{margin-left: 25%;}
+
+  #home_banner {
+    height: 50vh;
+  }
+
+  .home-content {
+    margin-top: -6%;
+  }
+
+  .table_section h4 {margin-top: 10%;}
+
+  
+}
+
+@media screen and (max-width:700px) {
+  /* ==== adjust some buttons to the right ==== */
+  .move_right {
+    margin-left: 0%;
+  }
+
+  .move_right_right {
+    margin-left: 35%;
+  }
+  
+  .home-content {
+    margin-top: -8%;
+  }
+  .campaign li {
+    margin: 3% auto;
+    width: 94%;
+    display: block;
+}
+
+ul.features {
+    margin: 1% auto;
+    width: 100%;
+}
+ul.features li {
+    background-color: aliceblue;
+    border: 2px solid rgb(152, 184, 252);
+    display: block;
+    width: 90%;
+    margin: 3% auto;
+    padding: 4% auto;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  .move_right,
+  .move_right_right {margin-left: 0;}
+}
+@media screen and (max-width: 450px) {
+  html, body{font-size: 14px;}
+  /* Navigation Bar */
+  .move_right,
+  .move_right_right {margin-left: 0;}
+
+  /* Landing  Form */
+  .auto_positioned{width: 80%;}
+
+  .home-content {
+    margin-top: -10.5%;
+  }
+
+  .fixed_footer{position: relative;}
 }
