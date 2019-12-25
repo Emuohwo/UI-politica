@@ -38,34 +38,41 @@
 
     <section class="form_section">
         <div class="form_wrapper">
-            <form action="" method="post" class="auto_positioned">
+            <form action="" method="post" class="auto_positioned signup">
 
                 <h1>Sign Up</h1>
 
                 <label for="firstname">First Name:</label>
-                <input type="text" name="firstname" class="form-control">
+                <input type="text" name="firstname" class="form-control firstname" placeholder="First Name">
+                <span class="firstnameError"></span>
 
                 <label for="lastname">Last Name:</label>
-                <input type="text" name="lastname" class="form-control">
+                <input type="text" name="lastname" class="form-control lastname" placeholder="Last Name">
+                <span class="lastnameError"></span>
 
                 <label for="othername">Other Names:</label>
-                <input type="text" name="othername" class="form-control">
+                <input type="text" name="othernames" class="form-control othernames" placeholder="Other Names">
+                <span class="othernamesError"></span>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" class="form-control">
+                <input type="email" name="email" class="form-control email" placeholder="Your Email">
+                <span class="emailError"></span>
 
                 <label for="password">Password:</label>
-                <input type="password" name="password" class="form-control">
+                <input type="password" name="password" class="form-control password" placeholder="Password">
+                <span class="passwordError"></span>
 
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" name="phoneNumber" class="form-control">
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" name="phonenumber" class="form-control phonenumber" placeholder="Phone Number">
+                <span class="phonenumberError"></span>
 
-                <label for="passportUrl">Passport Url:</label>
-                <input type="file" name="passportUrl" class="form-control">
+                <label for="passporturl">Passport Url:</label>
+                <input type="text" name="passporturl" class="form-control passporturl" placeholder="Passport Url">
+                <span class="passporturlError"></span>
 
-                <label for="isAdmin">Admin Role</label>
+                <!-- <label for="isAdmin">Admin Role</label>
                 <input type="radio" name="isAdmin"> Yes
-                <input type="radio" name="isAdmin" id=""> No
+                <input type="radio" name="isAdmin" id=""> No -->
 
                 <input type="submit" value="Sign Up" class="submit">
                 <p>Already have an account? <a href="signin.html">signin</a></p>
@@ -82,6 +89,7 @@
 
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/signup.js"></script>
 
 </body>
 </html>
