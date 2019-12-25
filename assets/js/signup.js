@@ -14,8 +14,8 @@ const passwordError = document.querySelector('.passwordError');
 const passporturl = document.querySelector('.passporturl');
 const passporturlError = document.querySelector('.passporturlError')
 
-const currApiEndpoint = 'http://127.0.0.1:3000';
-// const currApiEndpoint = 'https://warri-politica.herokuapp.com';
+// const currApiEndpoint = 'http://127.0.0.1:3000';
+const currApiEndpoint = 'https://warri-politica.herokuapp.com';
 
 signUpForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -34,7 +34,7 @@ signUpForm.addEventListener('submit', (e) => {
     formData.email = email.value;
   }
   if (phonenumber.value) {
-    formData.phoneNumber = phonenumber.value;
+    formData.phonenumber = phonenumber.value;
   }
   if (password.value) {
     formData.password = password.value;
@@ -74,7 +74,9 @@ signUpForm.addEventListener('submit', (e) => {
     passwordError.style.color = 'red';
     return false;
   };
-
+  console.log(formData);
+  console.log(JSON.stringify(formData));
+  
   const fetchConfig = {
     method: 'POST',
     headers: {
@@ -99,9 +101,7 @@ signUpForm.addEventListener('submit', (e) => {
       }
 
       if (data) {
-        const { user, token } = data[0];
-        localStorage.User = JSON.stringify(user);
-        localStorage.Token = token;
+        alert('Account created successfully! Click OK')
         window.location = './signin.html';
       }
     })
